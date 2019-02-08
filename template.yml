@@ -9,3 +9,4 @@ Resources:
       CodeUri: src/handlers
       Handler: handler
       Runtime: go1.x
+      Policies: AmazonDynamoDBFullAccess

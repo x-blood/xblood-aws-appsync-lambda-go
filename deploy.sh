@@ -1,7 +1,8 @@
 #!/bin/sh
 
-# Deploy
-go build ./src/handlers/handler.go
+# Build
+GOOS=linux go build ./src/handlers/handler.go
+mv ./handler ./src/handlers/
 
 # Create Package
 aws cloudformation package \
