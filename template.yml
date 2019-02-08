@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  SandboxFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: appsync-lambda-go
+      CodeUri: src/handlers
+      Handler: handler
+      Runtime: go1.x
